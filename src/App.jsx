@@ -3,18 +3,18 @@ import Layout from "./Layout/Layout";
 import Home from "./Pages/Home";
 import Introduce from "./Templates/Introduce";
 import RoutePages from "./Router/Routes";
-import { HashRouter as Router } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 
 const App = () => {
   return (
     <>
-      <Router>
+      <BrowserRouter>
         <Layout>
           <RoutePages />
           <Toaster />
         </Layout>
-      </Router>
+      </BrowserRouter>
     </>
   );
 };
